@@ -3,15 +3,10 @@ import dotenv from "dotenv"
 dotenv.config()
 
 
-const cloudinaryConfig = ()=> cloudinary.config({
+cloudinary.config({
     cloud_name : process.env.CLOUD_API_NAME,
     api_key : process.env.CLOUD_API_KEY,
     api_secret : process.env.CLOUD_API_SECRET
 })
 
-const cloudinaryUploader = cloudinary.uploader
-
-export {
-    cloudinaryConfig,
-    cloudinaryUploader
-}
+export default cloudinary
