@@ -1,8 +1,8 @@
 import express from "express";
-import { UploadImageController } from "../controllers/UploadImageController.js";
 
 import upload from "../MiddleWares/multerMiddleWare.js";
 import { AuthCheck } from "../MiddleWares/authMiddleWare.js";
+import UploadImageController from "../controllers/UploadImageController.js";
 
 const uploadRouter = express.Router()
 

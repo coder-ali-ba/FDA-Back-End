@@ -29,7 +29,7 @@
 // export {
 //     UploadImageController
 // }
-
+import express from "express";
 import cloudinary from "../Config/cloudinaryConfig.js";
 import streamifier from "streamifier"
 

@@ -5,13 +5,13 @@ import cors from "cors"
 import authRouter from "./routes/AuthRoutes.js";
 import restaurantRouter from "./routes/RestaurantRoutes.js";
 import uploadRouter from "./routes/UploadImageRoutes.js";
-import { cloudinaryConfig } from "./Config/cloudinaryConfig.js";
+// import { cloudinaryConfig } from "./Config/cloudinaryConfig.js";
 import Adminrouter from "./routes/AdminRoutes.js";
 import MenuRouter from "./routes/MenuRoutes.js";
 import orderRouter from "./routes/OrderRoutes.js";
 
 dotenv.config()
-cloudinaryConfig()
+// cloudinaryConfig()
 
 
 const PORT = process.env.PORT || 5050
