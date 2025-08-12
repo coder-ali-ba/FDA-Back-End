@@ -50,8 +50,10 @@ const UploadImageController = async (req, res) => {
     });
 
     res.status(200).json({ url: result.secure_url });
+    
   } catch (error) {
     res.status(500).json({ error: 'Upload failed', details: error.message });
+    
   }
 };
 

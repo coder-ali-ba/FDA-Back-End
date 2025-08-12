@@ -6,6 +6,6 @@ import UploadImageController from "../controllers/UploadImageController.js";
 
 const uploadRouter = express.Router()
 
-uploadRouter.post("/upload" , [AuthCheck , upload.any("image")],  UploadImageController)
+uploadRouter.post("/upload" , [AuthCheck , upload.any("image")],   UploadImageController)
 
 export default uploadRouter
