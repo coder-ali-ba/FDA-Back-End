@@ -85,7 +85,7 @@ try {
     res.json({
         status : true,
         message : "Loged In Successfully",
-        data : isExist.type,
+        data : isExist,
         token : token
     })
         
