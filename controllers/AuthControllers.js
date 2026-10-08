@@ -24,26 +24,26 @@ const signupController = async (req , res)=>{
 
         
 
-        const transporter = nodemailer.createTransport({
-           service : "Gmail",
-           host: "smtp.gmail.com",
-           port: 465,
-           secure: true, // true for 465, false for other ports
-           auth: {
-            user: process.env.EMAILADDRESS,
-            pass: process.env.PASS_KEY,
-           },
-        });
+        // const transporter = nodemailer.createTransport({
+        //    service : "Gmail",
+        //    host: "smtp.gmail.com",
+        //    port: 465,
+        //    secure: true, // true for 465, false for other ports
+        //    auth: {
+        //     user: process.env.EMAILADDRESS,
+        //     pass: process.env.PASS_KEY,
+        //    },
+        // });
 
-        const mailOptions = {
-            from: process.env.EMAILADDRESS,
-            to: body.email,
-            subject: "User Signup",
-            text: 'This is the plain text body',
-            html: '<b>This is the HTML body</b>'
-        };
+        // const mailOptions = {
+        //     from: process.env.EMAILADDRESS,
+        //     to: body.email,
+        //     subject: "User Signup",
+        //     text: 'This is the plain text body',
+        //     html: '<b>This is the HTML body</b>'
+        // };
 
-        await transporter.sendMail(mailOptions)
+        // await transporter.sendMail(mailOptions)
 
 
 
